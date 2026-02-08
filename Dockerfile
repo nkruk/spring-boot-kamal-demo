@@ -1,4 +1,4 @@
-FROM eclipse-temurin:25-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 RUN apk --no-cache add curl
 EXPOSE 8080
 ARG JAR_FILE=target/spring-boot-kamal-demo-0.0.1-SNAPSHOT.jar

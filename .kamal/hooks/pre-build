@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Pre-build hook to compile the Spring Boot application before Docker build
+#
+# This ensures the JAR file exists in the target/ directory before
+# the Docker image is built.
+
+echo "Running Maven build to create JAR file..."
+./mvnw clean package -DskipTests
+
+if [ $? -ne 0 ]; then
+  echo "Maven build failed, aborting..." >&2
+  exit 1
+fi
+
+echo "Maven build completed successfully!"
