@@ -19,6 +19,10 @@ registry:
   password:
     - KAMAL_REGISTRY_PASSWORD
 
+# Configure builder settings
+builder:
+  arch: amd64
+
 ... #Other commented out stuff
 
 # Configure a custom healthcheck (default is /up on port 3000)
