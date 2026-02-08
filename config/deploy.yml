@@ -2,7 +2,7 @@
 service: spring-boot-kamal-demo
 
 # Name of the container image.
-image: spring-boot-kamal-demo/demo
+image: nkruk/spring-boot-kamal-demo
 
 # Deploy to these servers.
 servers:
