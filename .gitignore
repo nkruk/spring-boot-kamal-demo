@@ -34,3 +34,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### KAMAL ###
+.kamal/secrets
+.kamal/hooks/*.sample
